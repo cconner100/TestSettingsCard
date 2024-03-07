@@ -1,0 +1,10 @@
+{
+	"profiles": {
+		"TestSettingsCard.Windows (Unpackaged)": {
+			"commandName": "Project"
+		},
+		"TestSettingsCard.Windows (Package)": {
+			"commandName": "MsixPackage"
+		}
+	}
+}

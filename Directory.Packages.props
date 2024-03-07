@@ -1,0 +1,49 @@
+<Project ToolsVersion="15.0">
+  <ItemGroup>
+    <!-- Community Toolkit WinUI 8.0 stuff here -->
+    <PackageVersion Include="CommunityToolkit.Mvvm" Version="8.2.2" />
+    <PackageVersion Include="CommunityToolkit.WinUI.Animations" Version="8.0.240109" />
+    <PackageVersion Include="CommunityToolkit.WinUI.Extensions " Version="8.0.240109" />
+    <PackageVersion Include="CommunityToolkit.WinUI.Helpers " Version="8.0.240109" />
+    <PackageVersion Include="CommunityToolkit.WinUI.Triggers " Version="8.0.240109" />
+    <PackageVersion Include="CommunityToolkit.WinUI.Controls.SettingsControls" Version="8.0.240109" />
+    <PackageVersion Include="CommunityToolkit.WinUI.Controls.Segmented" Version="8.0.240109" />
+    <PackageVersion Include="CommunityToolkit.WinUI.Controls.Primitives" Version="8.0.240109" />
+    <PackageVersion Include="CommunityToolkit.WinUI.Collections" Version="8.0.240109" />
+    <PackageVersion Include="CommunityToolkit.WinUI.Controls.Sizers" Version="8.0.240109" />
+    <PackageVersion Include="CommunityToolkit.WinUI.Lottie" Version="8.0.0-rc" />
+    <PackageVersion Include="CommunityToolkit.WinUI.Behaviors" Version="8.0.240109" />
+    <PackageVersion Include="CommunityToolkit.WinUI.DeveloperTools" Version="8.0.240109" />
+    <PackageVersion Include="CommunityToolkit.WinUI.Media" Version="8.0.240109" />
+    <PackageVersion Include="CommunityToolkit.WinUI.Controls.HeaderedControls" Version="8.0.240109" />
+    <PackageVersion Include="CommunityToolkit.WinUI.Controls.LayoutTransformControl" Version="8.0.240109" />
+    <PackageVersion Include="CommunityToolkit.WinUI.Controls.TokenizingTextBox" Version="8.0.240109" />
+    <PackageVersion Include="CommunityToolkit.WinUI.Controls.RangeSelector" Version="8.0.240109" />
+    <PackageVersion Include="CommunityToolkit.WinUI.Controls.RadialGauge" Version="8.0.240109" />
+    <PackageVersion Include="CommunityToolkit.WinUI.Controls.CameraPreview" Version="8.0.240109" />
+    <PackageVersion Include="CommunityToolkit.WinUI.Controls.RichSuggestBox" Version="8.0.240109" />
+    <PackageVersion Include="CommunityToolkit.WinUI.Controls.MetadataControl" Version="8.0.240109" />
+    
+    <PackageVersion Include="Microsoft.Extensions.Logging.Console" Version="8.0.0" />
+    <PackageVersion Include="Microsoft.Windows.Compatibility" Version="8.0.2" />
+    <PackageVersion Include="Microsoft.Windows.SDK.BuildTools" Version="10.0.22621.3233" />
+    <PackageVersion Include="Microsoft.WindowsAppSDK" Version="1.5.240227000" />
+    <PackageVersion Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+    <PackageVersion Include="Uno.Core.Extensions.Logging.Singleton" Version="4.0.1" />
+    <PackageVersion Include="Uno.Extensions.Core.WinUI" Version="4.0.0" />
+    <PackageVersion Include="Uno.Extensions.Logging.OSLog" Version="1.7.0" />
+    <PackageVersion Include="Uno.Extensions.Logging.WebAssembly.Console" Version="1.7.0" />
+    <PackageVersion Include="Uno.Toolkit.WinUI" Version="5.1.7" />
+    <PackageVersion Include="Uno.Resizetizer" Version="1.3.0" />
+    <PackageVersion Include="Uno.UI.Adapter.Microsoft.Extensions.Logging" Version="$(UnoVersion)" />
+    <PackageVersion Include="Uno.UniversalImageLoader" Version="1.9.36" />
+    <PackageVersion Include="Uno.Wasm.Bootstrap" Version="9.0.0-dev.35" />
+    <PackageVersion Include="Uno.Wasm.Bootstrap.DevServer" Version="9.0.0-dev.35" />
+    <PackageVersion Include="Uno.Wasm.Bootstrap.Server" Version="9.0.0-dev.35" />
+    <PackageVersion Include="Uno.WinUI" Version="$(UnoVersion)" />
+    <PackageVersion Include="Uno.WinUI.Lottie" Version="$(UnoVersion)" />
+    <PackageVersion Include="Uno.WinUI.DevServer" Version="$(UnoVersion)" />
+    <PackageVersion Include="Uno.WinUI.WebAssembly" Version="$(UnoVersion)" />
+    <PackageVersion Include="Xamarin.Google.Android.Material" Version="1.10.0.3" />
+  </ItemGroup>
+</Project>

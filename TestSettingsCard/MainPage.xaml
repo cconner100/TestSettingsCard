@@ -1,0 +1,94 @@
+﻿<Page x:Class="TestSettingsCard.MainPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:wct="using:CommunityToolkit.WinUI.Controls"
+      xmlns:ui="using:CommunityToolkit.WinUI"
+      xmlns:local="using:TestSettingsCard"
+      xmlns:utu="using:Uno.Toolkit.UI"
+      Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+  <ScrollViewer>
+    <StackPanel Spacing="4">
+      <wct:SettingsCard x:Name="aboutCard"
+                               Description="About the application"
+                               Header="About"
+                               HeaderIcon="{ui:FontIcon Glyph=&#xE946;}">
+        <StackPanel>
+          <TextBlock Text="ZiiDMS" FontSize="24" FontWeight="Bold" />
+          <TextBlock Text="Version 4.0.0" FontSize="16" />
+          <TextBlock Text="© 2024 ZiiDMS" FontSize="16" />
+        </StackPanel>
+      </wct:SettingsCard>
+
+      <wct:SettingsCard x:Name="themeCard"
+                               Description="Change the colors that appear in the application"
+                               Header="Choose your mode"
+                               HeaderIcon="{ui:FontIcon Glyph=&#xE790;}">
+      </wct:SettingsCard>
+
+      <!--<wct:SettingsCard x:Name="languageCard"e:\ziidms\ziidmsapp\client\ziidmsapp\ziidmsapp.common\views\settings\settingspage.xaml.cs
+e:\ziidms\ziidmsapp\client\ziidmsapp\ziidmsapp.common\views\settings\settingspage.xaml
+
+                         Description="Select the language the system uses"
+                         Header="Choose your language"
+                         HeaderIcon="{ui:FontIcon Glyph=&#xE790;}">
+        <ComboBox SelectedItem="{x:Bind ViewModel.Theme, Mode=TwoWay}">
+          <x:String>English</x:String>
+          <x:String>French Canadian</x:String>
+          <x:String>Englist Australian</x:String>
+        </ComboBox>
+      </wct:SettingsCard>-->
+
+      <!-- Thermal Label Printers -->
+      <wct:SettingsExpander x:Name="LabelSettingsCard"
+                        Description="Label Printer Settings"
+                        Header="Thermal Label Printer Settings"
+                        HeaderIcon="{ui:FontIcon Glyph=&#xEC5B;}">
+        <ToggleSwitch />
+
+
+        <wct:SettingsExpander.Items>
+          <wct:SettingsCard x:Name="LabelSettingsCardIpAddress"
+                                 Description="IP Address and port number of the label printer"
+                                 Header="Label Printer IP Address"
+                                 HeaderIcon="{ui:FontIcon Glyph=&#xE701;}">
+            <TextBox  />
+          </wct:SettingsCard>
+
+          <wct:SettingsCard x:Name="LabelSettingsPrintTest"
+                            Description="Print a test label"
+                            Header="Print Test Label"
+                            HeaderIcon="{ui:FontIcon Glyph=&#xE703;}">
+            <Button Content="Print Test Label" />
+          </wct:SettingsCard>
+        </wct:SettingsExpander.Items>
+      </wct:SettingsExpander>
+
+      <!-- RFID Settings -->
+      <wct:SettingsExpander x:Name="RfidSettingsCard"
+                  Description="RFID Label Printer Settings"
+                  Header="RFID Label Printer Settings"
+                  HeaderIcon="{ui:FontIcon Glyph=&#xEC5A;}">
+        <ToggleSwitch />
+
+
+        <wct:SettingsExpander.Items>
+          <wct:SettingsCard x:Name="RfidSettingsCardIpAddress"
+                           Description="IP Address and port number of the RFID printer"
+                           Header="RFID Printer IP Address"
+                           HeaderIcon="{ui:FontIcon Glyph=&#xE701;}">
+            <TextBox ui:TextBoxExtensions.Mask="999.999.999.999:9999"
+               ui:TextBoxExtensions.ValidationMode="Forced" />
+          </wct:SettingsCard>
+
+          <wct:SettingsCard x:Name="RfidSettingsCardPrintTest"
+                      Description="Print a test label"
+                      Header="Print Test Label"
+                      HeaderIcon="{ui:FontIcon Glyph=&#xE703;}">
+            <Button Content="Print RFID Test Label" />
+          </wct:SettingsCard>
+        </wct:SettingsExpander.Items>
+      </wct:SettingsExpander>
+
+    </StackPanel>
+  </ScrollViewer>
+</Page>
